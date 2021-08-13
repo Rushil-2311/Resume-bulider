@@ -71,7 +71,7 @@ const BasicForm = () => {
             placeholder="Enter Your Last Name"
             fullWidth
             margin="normal"
-            {...field}
+            {...field}  
           />
         )}
       />
@@ -230,6 +230,36 @@ const PaymentForm = () => {
             label="Card Number"
             variant="outlined"
             placeholder="Enter Your Card Number"
+            fullWidth
+            margin="normal"
+            {...field}
+          />
+        )}
+      />
+      <Controller
+        control={control}
+        name="educationDeatails"
+        render={({ field }) => (
+          <TextField
+            id="educationDeatails"
+            label=" educationDeatails"
+            variant="outlined"
+            placeholder="Enter Your  educationDeatails"
+            fullWidth
+            margin="normal"
+            {...field}
+          />
+        )}
+      />
+      <Controller
+        control={control}
+        name="work experiance"
+        render={({ field }) => (
+          <TextField
+            id="work experiance"
+            label="work experiance"
+            variant="outlined"
+            placeholder="Enter Your work experiance"
             fullWidth
             margin="normal"
             {...field}
